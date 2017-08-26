@@ -1,0 +1,35 @@
+Project: CPU Simulation
+Author: Yizhong Chen
+Date: Nov.15th.2016
+
+Introduction:
+In this project, the goal is to create a simulator for the simple CPU and associated main memory. This program is capable of reading a Register Transfer Notation (RTN) file, and specify how the instructions of ISA are implemented according to the RTN file. The program will demonstrate the functionality by a graphic user interface (GUI) and a set of unit-tests.
+
+For this project, there is seventeen classes in my design, which are: Main.java, CPUsimulator.java, DataPath.java, ControlUnit.java, RTNController.java, RegisterFiles.java, MainMemory.java, Configuration.java, ProgramCounter.java, InstructionRegisters.java, StackPointer.java, MemoryAddress.java, MemoryData.java, A.java, C.java, ALU.java and GeneralRegister.java. 
+
+There are two Gui: Gui_FrontPage.java and Gui_SimulationPage.java
+
+There is also a unit test class: UnitTest.java.
+
+To run the program in Command:
+1. Go to the directory of this program in terminal
+2. $ javac Main.java
+3. $ java Main
+
+In order to run the Gui
+1. Go to the directory of this program in terminal
+2. $ javac Gui_FrontPage.java
+3. $ java Gui_FrontPage
+
+In order to run the unit test
+1. Go to the directory of this program in terminal
+2. $ javac UnitTest.java
+3. $ java UnitTest
+
+Running Unit Test may not be successful using commands because of the version of Junit.
+However, you can still run unit test or the whole program in BlueJ as following:
+	Open BlueJ 
+	Select ‘Project’
+	Select ‘Open Non-BlueJ Project’ 
+	Select this program directory.
+Now you can run this program in BlueJ!

@@ -1,0 +1,38 @@
+FETCH:
+MA <- PC
+C <- PC+1
+MD <- M[MA]
+PC <- C
+IR <- MD
+rrmov:
+R[dest] <- R[src]
+rmmov:
+A <- R[dest]
+C <- A + Imm
+MA <- C
+MD <- R[src]
+M[MA] <- MD
+mrmov:
+A <- R[src]
+C <- A + Imm
+MA <- C
+MD <- M[MA]
+R[dest] <- MD
+irmov:
+R[dest] <- Imm
+add:
+A <- R[src]
+C <- A + R[dest]
+R[dest] <- C
+sub:
+A <- R[src]
+C <- R[dest] - A
+R[dest] <- C
+and:
+A <- R[src]
+C <- A & R[dst]
+R[dest] <- C
+xor:
+A <- R[src]
+C <- A ^ R[dst]
+R[dest] <- C

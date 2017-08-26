@@ -1,0 +1,5 @@
+word_size 64
+bus_size 24
+ALU_Functionality add: true minus: true multipy: true divide: true and: false or: false not: false xor: false
+number_of_general_registers 4 r1 001 r2 010 r3 011 rax 100
+stack_pointer 20
